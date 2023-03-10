@@ -1,0 +1,235 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTabLayout" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Album" />
+
+    <style name="Album.MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Album.AppBar">
+        <item name="android:background">@color/albumTransparent</item>
+    </style>
+
+    <style name="Album.AppBar.General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Album.AppBar.General.Transparent">
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="Album.Theme.Toolbar.Popup" parent="ThemeOverlay.AppCompat.Light">
+        <item name="actionMenuTextColor">@color/albumFontDark</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Album.Theme.Toolbar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">@color/albumFontLight</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Album.Theme.Toolbar.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="actionMenuTextColor">@color/albumFontDark</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Album.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="popupTheme">@style/Album.Theme.Toolbar.Popup</item>
+    </style>
+
+    <style name="Album.Toolbar.Dark">
+        <item name="android:theme">@style/Album.Theme.Toolbar.Dark</item>
+        <item name="titleTextColor">@color/albumFontLight</item>
+        <item name="subtitleTextColor">@color/albumFontLight</item>
+    </style>
+
+    <style name="Album.WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Album.WrapContent.WidthMatchParent">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Album.MatchParent.SheetBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="Album.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox" />
+
+    <style name="Album.CheckBox.WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Album.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Album.Dialog.Folder">
+            <item name="android:windowBackground">@color/albumTransparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Album.Item" />
+
+    <style name="Album.Item.Card">
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="cardCornerRadius">1dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="Album.Item.Card.MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Album.TextButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    <style name="Album.TextButton.WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Album.TextButton.WrapContent.SheetBottom">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxWidth">190dp</item>
+        <item name="android:textColor">@color/albumFontLight</item>
+    </style>
+
+    <style name="Album.Toolbar.Light">
+        <item name="android:theme">@style/Album.Theme.Toolbar.Light</item>
+        <item name="titleTextColor">@color/albumFontDark</item>
+        <item name="subtitleTextColor">@color/albumFontDark</item>
+    </style>
+
+    <style name="Album.Theme.Button" parent="@style/Theme.AppCompat.Light" />
+
+    <style name="Album.Button" parent="Widget.AppCompat.Button">
+        <item name="android:theme">@style/Album.Theme.Button</item>
+    </style>
+
+    <style name="Album.Button.WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Album.Progress" parent="Widget.AppCompat.ProgressBar" />
+
+    <style name="Album.Progress.Loading">
+        <item name="android:minWidth">35dp</item>
+        <item name="android:maxWidth">35dp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:maxHeight">35dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="Album.WrapContent.Transfer">
+        <item name="android:clickable">true</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="customCardView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="cardCornerRadius">15dp</item>
+    </style>
+
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_17sp">17sp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_20sp">20sp</dimen>
+    <dimen name="dimen_22sp">22sp</dimen>
+    <dimen name="dimen_24sp">24sp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_25sp">25sp</dimen>
+    <dimen name="dimen_26dp">26dp</dimen>
+    <dimen name="dimen_28dp">28dp</dimen>
+    <dimen name="dimen_28sp">28sp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_30sp">30sp</dimen>
+    <dimen name="dimen_35dp">35dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_45dp">45dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_65dp">65dp</dimen>
+    <dimen name="dimen_68dp">68dp</dimen>
+    <dimen name="dimen_70dp">70dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_85dp">85dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_amount_layout_amount">24sp</dimen>
+    <dimen name="dimen_emi_interest">14sp</dimen>
+    <dimen name="dimen_emi_tenure">14sp</dimen>
+    <dimen name="dimen_emi_tenure_margin">20dp</dimen>
+    <dimen name="dimen_emi_tenure_margin2">10dp</dimen>
+    <dimen name="dimen_emi_value">14sp</dimen>
+    <dimen name="dimen_review_order_title_size">16sp</dimen>
+
+</resources>

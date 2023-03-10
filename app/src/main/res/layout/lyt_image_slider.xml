@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/sliderImage"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+</FrameLayout>

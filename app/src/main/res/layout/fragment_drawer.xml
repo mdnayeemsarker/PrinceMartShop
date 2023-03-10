@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:scrollbars="none"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lytProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_shadow"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="7dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/imgProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name" />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@id/imgEditProfile"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/colorSecondary" />
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:textColor="@color/lightest_gray"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="viewStart"/>
+
+                <TextView
+                    android:id="@+id/tvWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMobile"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/lightest_gray"
+                    android:textAlignment="viewStart"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvBonusBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMobile"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/bonus_balance"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/lightest_gray"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/card_shadow"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvMenuHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/title_home"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_home_outlined"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/title_cart"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_cart_outlined"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/notifications"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_notifications"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <LinearLayout
+                android:id="@+id/lytMenuGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_grey" />
+
+                <TextView
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/your_orders"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_menu_tracker"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+                <TextView
+                    android:visibility="gone"
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuWalletHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/wallet_history"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_wallet"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+                <TextView
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuTransactionHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/transaction_history"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_transaction_history"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+                <TextView
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuPaymentHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/payment_history"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_wallet"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+                <TextView
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/change_password"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_pass"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+                <TextView
+                    app:drawableEndCompat="@drawable/ic_right_arrow"
+                    android:id="@+id/tvMenuManageAddresses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/text_view_ripple"
+                    android:clickable="true"
+                    android:drawablePadding="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/manage_addresses"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:drawableStartCompat="@drawable/ic_manage_address"
+                    app:drawableTint="@color/drawer_icon_color" />
+
+<!--                <TextView-->
+<!--                    app:drawableEndCompat="@drawable/ic_right_arrow"-->
+<!--                    android:id="@+id/tvMenuReferEarn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:background="@drawable/text_view_ripple"-->
+<!--                    android:clickable="true"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:minHeight="48dp"-->
+<!--                    android:paddingStart="15dp"-->
+<!--                    android:paddingTop="7dp"-->
+<!--                    android:paddingEnd="15dp"-->
+<!--                    android:paddingBottom="7dp"-->
+<!--                    android:text="@string/refer_and_earn"-->
+<!--                    android:textAlignment="viewStart"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--                    app:drawableStartCompat="@drawable/ic_add_person"-->
+<!--                    app:drawableTint="@color/drawer_icon_color" />-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/tvMenuOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/offers"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_contact1"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/contact"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_wallet"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/about"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_about"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuRateUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/rate"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_rate"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuShareApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/share_app"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_share"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/faq"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_faq"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuTermsConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/terms_and_conditions"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_terms"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/privacy_policy"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_right_arrow"
+                app:drawableStartCompat="@drawable/ic_privacy"
+                app:drawableTint="@color/drawer_icon_color" />
+
+            <TextView
+                android:id="@+id/tvMenuLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_view_ripple"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:text="@string/logout"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableStartCompat="@drawable/ic_logout"
+                app:drawableTint="@color/drawer_icon_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

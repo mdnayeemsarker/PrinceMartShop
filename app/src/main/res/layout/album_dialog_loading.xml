@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Album.WrapContent"
+    android:gravity="center"
+    android:paddingLeft="35dp"
+    android:paddingTop="20dp"
+    android:paddingRight="35dp"
+    android:paddingBottom="20dp">
+
+    <com.princemartbd.shop.helper.album.widget.ColorProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Album.Progress.Loading" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        style="@style/Album.WrapContent"
+        android:layout_marginStart="20dp"
+
+        android:textColor="@color/albumFontHint"
+        android:textSize="16sp" />
+
+</LinearLayout>

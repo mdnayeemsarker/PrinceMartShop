@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315824048755",
+    "project_id": "princemart-shop",
+    "storage_bucket": "princemart-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315824048755:android:999677ebe332972672f806",
+        "android_client_info": {
+          "package_name": "com.princemartbd.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315824048755-5bee8ln08pk1gn3bodm2sd96ortcd9m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPiD-622jjMCPZQvnkViGuZqbLy3i2j-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315824048755-5bee8ln08pk1gn3bodm2sd96ortcd9m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

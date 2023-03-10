@@ -1,0 +1,101 @@
+<resources>
+    <color name="colorPrimary">#222E3E</color>
+    <color name="colorSecondary">#FF9900</color>
+    <color name="colorPrimaryDark">#10161d</color>
+    <color name="colorAccent">#222E3E</color>
+    <color name="colorPrimaryLight">#3A4E68</color>
+    <color name="text_unselected">#A3AABF</color>
+    <color name="bg_color">#F8F8F8</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#ACABAB</color>
+    <color name="bg_gray">#E9E8E8</color>
+    <color name="txt_color">#191919</color>
+    <color name="drawer_icon_color">#494A49</color>
+    <color name="trans_white">#F2FFFFFF</color>
+    <color name="lightest_gray">#DBDBDB</color>
+    <color name="red">#eb4f3f</color>
+    <color name="tracking_gray">#B9B6B6</color>
+    <color name="dark_gray">#313030</color>
+    <color name="light_gray">#dbdada</color>
+    <color name="light_green">#14c167</color>
+    <color name="tx_fail_bg">#dd4b39</color>
+    <color name="tx_success_bg">#00a65a</color>
+    <color name="received_status_bg">#3c8dbc</color>
+    <color name="shipped_status_bg">#f39c12</color>
+    <color name="returned_and_cancel_status_bg">#dd4b39</color>
+    <color name="delivered_status_bg">#00a65a</color>
+    <color name="background">#1A070707</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent_white">#99FFFFFF</color>
+    <color name="tx_promo_code_fail">#dd4b39</color>
+
+    <color name="albumColorPrimary">#222E3E</color>
+    <color name="albumColorPrimaryDark">#10161d</color>
+    <color name="albumColorPrimaryBlack">#10161d</color>
+
+    <color name="albumPageLight">#FFF</color>
+    <color name="albumTransparent">#0000</color>
+
+    <color name="albumFontHint">#808080</color>
+    <color name="albumFontLight">#FFF</color>
+    <color name="albumFontDark">#333</color>
+
+    <color name="albumIconDark">#333</color>
+    <color name="albumLoadingDark">#333</color>
+    <color name="albumSelectorNormal">#E0E0E0</color>
+
+    <color name="albumSheetBottom">#FFFFFF</color>
+    <color name="albumSheetLayer">#FFFFFF</color>
+
+    <color name="actionbar_background">@color/primary_blue</color>
+    <color name="activate_text_color">#FF666666</color>
+    <color name="active_text">#3c3329</color>
+    <color name="active_yellow">#ffdd00</color>
+    <color name="app_primary_text_disabled_material_light">#39000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="blue">#FF1784C7</color>
+    <color name="button_background">@color/active_yellow</color>
+    <color name="button_disabled_background">@color/inactive_bg</color>
+    <color name="button_gray">#cbcbcb</color>
+    <color name="button_green">#5fc73b</color>
+    <color name="card_bg_color">#EDEDED</color>
+    <color name="cards_label_textColor">#13100d</color>
+    <color name="cards_number_textColor">#514538</color>
+    <color name="cb_dark_blue_button">#094774</color>
+    <color name="cb_otpColor">#368ecd</color>
+    <color name="cb_otpDisabledColor">#7d88b3</color>
+    <color name="circle_indicator">@color/primary_blue</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="color_13">#fffbe2</color>
+    <color name="color_2">#c56100</color>
+    <color name="color_20">#f2f2f2</color>
+    <color name="color_3">#13100d</color>
+    <color name="color_5">#7bd6d6c6</color>
+    <color name="color_9">#514538</color>
+    <color name="darker_gray">#8c8c8c</color>
+    <color name="deactivate_text_color">#FFCCCCCC</color>
+    <color name="deep_blue">#1c3f95</color>
+    <color name="error_strip">#e74040</color>
+    <color name="help_text">@color/primary_blue</color>
+    <color name="highlighted_icon">@color/primary_blue</color>
+    <color name="inactive_bg">#fffbe2</color>
+    <color name="inactive_text">#d0cbc6</color>
+    <color name="input_glow">@color/primary_blue</color>
+    <color name="input_glow_hidden">@color/dark_gray</color>
+    <color name="input_gray">#FFDEE6E6</color>
+    <color name="light_blue">#aecdd8</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="orange">#c56100</color>
+    <color name="payumoney_accent">#7AA4D5</color>
+    <color name="payumoney_text_color">#575757</color>
+    <color name="primary_blue">#00aeef</color>
+    <color name="primary_green">#6ac451</color>
+    <color name="primary_orange">#c56100</color>
+    <color name="sky_blue">#7ec0ee</color>
+    <color name="slogan_text">@color/deep_blue</color>
+    <color name="success">#3bbe01</color>
+    <color name="title_indicator">@color/primary_blue</color>
+    <color name="trans_black">#32000000</color>
+
+</resources>
